@@ -3,6 +3,7 @@
 /* акцент #2196F3 */
 /* футер-адресса (тел, мейл) rgba(255, 255, 255, 0.6); */
 /* білий #FFFFFF */
+/* --portfolio-bg-color: #e5e5e5; */
 
 :root {
   --primary-fontcolor: #757575;
@@ -12,14 +13,13 @@
   --accent-color: #2196f3;
   --color-white: #ffffff;
   --color-black: #000000;
-  --commands-bg-color: #e5e5e5;
   --footer-bg-color: #2f303a;
   --address-contact-color: rgba(255, 255, 255, 0.6);
   --hero-button-hover: #188ce8;
 }
 
 body {
-  background-color: var(--primary-bg-color);
+  background-color: var(--color-white);
   color: var(--primary-fontcolor);
 
   font-size: var(--primary-fontsize);
@@ -144,6 +144,7 @@ img {
 
 .hero {
   text-align: center;
+  padding-top: 200px;
   padding-bottom: 200px;
 }
 
@@ -157,7 +158,10 @@ img {
   text-align: center;
   text-transform: uppercase;
 
+  width: 696px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -171,6 +175,8 @@ img {
 .hero-button {
   display: inline-block;
   padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: var(--accent-color);
   color: var(--color-white);
@@ -208,7 +214,7 @@ img {
   display: flex;
   justify-content: center;
 
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filter .button {
@@ -216,7 +222,8 @@ img {
   font-size: 16px;
   line-height: 1.62;
   margin-right: 8px;
-  /* background-color: var(--primary-bg-color); */
+  padding: 6px 22px;
+  background-color: var(--primary-bg-color);
 }
 
 /* Page title */
@@ -248,6 +255,7 @@ img {
   padding-top: 95px;
   padding-bottom: 95px;
 }
+
 .peculiarity .title {
   font-size: 14px;
   font-weight: 700;
@@ -289,6 +297,7 @@ img {
 .section.commands {
   padding-top: 95px;
   padding-bottom: 95px;
+  background-color: var(--primary-bg-color);
 }
 
 .command {
@@ -315,10 +324,6 @@ img {
   margin-right: 0;
 }
 
-.commands {
-  background-color: var(--commands-bg-color);
-}
-
 .command .title {
   font-weight: 500;
   font-size: 16px;
@@ -331,6 +336,7 @@ img {
 .command .position {
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 30px;
 }
 
 /* портфолио */
@@ -352,12 +358,14 @@ img {
 .portfolio-list > .item {
   flex-basis: calc((100% - 90px) / 3);
   margin: 15px 15px;
-  border: 1px solid #eeeeee;
   /* outline: 1px solid tomato; */
 }
 
 .description {
-  margin: 20px 24px;
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio-list .technology {
@@ -365,9 +373,8 @@ img {
 }
 
 .portfolio-section {
-  padding-top: 95px;
-  padding-bottom: 95px;
-  background-color: var(--color-white);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .site-nav .link:hover,
